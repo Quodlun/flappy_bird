@@ -7,17 +7,25 @@ public class bird_script : MonoBehaviour
 {
     public Rigidbody2D myRigidbody;
     public float flapStrength;
+    public logic logic;
+    public bool birdIsAlive = true;
 
     void Start ()
     {
-        
+        logic = GameObject.FindGameObjectWithTag ( "Logic" ).GetComponent<logic> ( );
     }
 
     void Update ()
     {
-        if ( Input.GetKeyDown ( KeyCode.Space ) == true )
+        if ( Input.GetKeyDown ( KeyCode.Space ) == true && birdIsAlive )
         {
             myRigidbody.velocity = Vector2.up * flapStrength;
         }
+    }
+
+    private void OnCollisionEnter2D ( Collision2D collision )
+    {
+        logic.gameOver ();
+        birdIsAlive = false;
     }
 }
