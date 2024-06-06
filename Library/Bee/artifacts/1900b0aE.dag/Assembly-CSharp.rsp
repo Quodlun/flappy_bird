@@ -373,6 +373,8 @@
 -analyzer:"D:/Unity/Hub/Editor/2022.3.31f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/Unity/Hub/Editor/2022.3.31f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/bird_script.cs"
+"Assets/ground_move.cs"
+"Assets/ground_spawn.cs"
 "Assets/logic.cs"
 "Assets/pipe_middle.cs"
 "Assets/pipe_move.cs"
