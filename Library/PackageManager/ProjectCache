@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638531808806250705
-    m_Hash: 1652564355
+      ticks: 638533825495240078
+    m_Hash: 3161166825
   m_LockFileStatus:
     m_FilePath: D:/repos/unity/flappy_bird/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638531810023652211
-    m_Hash: 2359027707
+      ticks: 638533825495240078
+    m_Hash: 2985627455
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -3274,6 +3274,7 @@ m_ResolvedPackages:
     - 7.0.12
     - 7.0.13
     - 7.1.0
+    - 7.1.1
     - 8.0.0-pre.3
     - 8.0.0-pre.4
     - 8.0.0
@@ -4458,6 +4459,7 @@ m_ResolvedPackages:
     - 2.4.0-pre.5
     - 2.4.0
     - 2.4.1
+    - 2.4.2
     compatible:
     - 1.2.4
     - 1.3.1
@@ -4479,7 +4481,8 @@ m_ResolvedPackages:
     - 2.4.0-pre.5
     - 2.4.0
     - 2.4.1
-    recommended: 2.4.1
+    - 2.4.2
+    recommended: 2.4.2
     deprecated: []
   dependencies:
   - name: com.unity.burst
