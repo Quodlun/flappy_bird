@@ -19,7 +19,7 @@ public class logic : MonoBehaviour
 
     public void restartGame ()
     {
-        SceneManager.LoadScene ( SceneManager.GetActiveScene ( ).name );
+        SceneManager.LoadScene ( SceneManager.GetActiveScene ().name );
     }
 
     public void gameOver ()

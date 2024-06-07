@@ -65,8 +65,10 @@
     <Compile Include="Assets\bird_script.cs" />
     <Compile Include="Assets\pipe_spawn.cs" />
     <Compile Include="Assets\ground_move.cs" />
+    <Compile Include="Assets\GroundMove.cs" />
     <Compile Include="Assets\ground_spawn.cs" />
     <Compile Include="Assets\pipe_move.cs" />
+    <Compile Include="Assets\top_border.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
