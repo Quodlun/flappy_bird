@@ -66,7 +66,6 @@
     <Compile Include="Assets\pipe_spawn.cs" />
     <Compile Include="Assets\background_move.cs" />
     <Compile Include="Assets\ground_move.cs" />
-    <Compile Include="Assets\GroundMove.cs" />
     <Compile Include="Assets\ground_spawn.cs" />
     <Compile Include="Assets\pipe_move.cs" />
     <Compile Include="Assets\top_border.cs" />

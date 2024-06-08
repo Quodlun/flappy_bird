@@ -1,24 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ground_move : MonoBehaviour
+public class GroundMove : MonoBehaviour
 {
-    public float moveSpeed = 5;
-    public float deadZone = -45;
+    private MeshRenderer meshRenderer;
+    public float animationSpeed = 1.0f;
 
-    void Start ()
+    private void Awake()
     {
-
+        meshRenderer = GetComponent<MeshRenderer>();
     }
 
-    void Update ()
+    private void Update()
     {
-        transform.position = transform.position + ( Vector3.left * moveSpeed ) * Time.deltaTime;
-
-        if ( transform.position.x < deadZone )
-        {
-            Destroy ( gameObject );
-        }
+        meshRenderer.material.mainTextureOffset += new Vector2 ( animationSpeed * Time.deltaTime, 0 );
     }
 }
