@@ -9,6 +9,7 @@ public class logic : MonoBehaviour
     public int playerScore;
     public Text scoreText;
     public GameObject gameOverScreen;
+    public bool gameOverBool = false;
 
     [ ContextMenu ( "Increase Score" ) ]
     public void addScore ( int scoreToAdd )
@@ -20,10 +21,12 @@ public class logic : MonoBehaviour
     public void restartGame ()
     {
         SceneManager.LoadScene ( SceneManager.GetActiveScene ().name );
+        gameOverBool = false;
     }
 
     public void gameOver ()
     {
         gameOverScreen.SetActive ( true );
+        gameOverBool = true;
     }
 }

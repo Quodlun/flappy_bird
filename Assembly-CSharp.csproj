@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\pipe_middle.cs" />
+    <Compile Include="Assets\spacebar_to_retry.cs" />
     <Compile Include="Assets\logic.cs" />
     <Compile Include="Assets\bird_script.cs" />
     <Compile Include="Assets\pipe_spawn.cs" />

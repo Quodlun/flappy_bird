@@ -380,6 +380,7 @@
 "Assets/pipe_middle.cs"
 "Assets/pipe_move.cs"
 "Assets/pipe_spawn.cs"
+"Assets/spacebar_to_retry.cs"
 "Assets/top_border.cs"
 -langversion:9.0
 /deterministic
