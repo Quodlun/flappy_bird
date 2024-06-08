@@ -1,11 +1,15 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - GroundMove
+    - background_move
     - bird_script
     - logic
     - pipe_middle
     - pipe_move
     - pipe_spawn
+    - space_to_retry
+    - top_border
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
@@ -71,7 +75,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
@@ -94,21 +104,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3494}
     - Class: 114
-      Script: {instanceID: 6334}
+      Script: {instanceID: 5222}
     - Class: 114
-      Script: {instanceID: 6704}
+      Script: {instanceID: 5934}
     - Class: 114
-      Script: {instanceID: 7324}
+      Script: {instanceID: 5944}
     - Class: 114
-      Script: {instanceID: 25130}
+      Script: {instanceID: 6340}
     - Class: 114
-      Script: {instanceID: 25794}
+      Script: {instanceID: 6710}
     - Class: 114
-      Script: {instanceID: 26030}
+      Script: {instanceID: 7150}
     - Class: 114
-      Script: {instanceID: 26702}
+      Script: {instanceID: 7212}
     - Class: 114
-      Script: {instanceID: 27030}
+      Script: {instanceID: 7334}
+    - Class: 114
+      Script: {instanceID: 8230}
+    - Class: 114
+      Script: {instanceID: 9666}
+    - Class: 114
+      Script: {instanceID: 9670}
+    - Class: 114
+      Script: {instanceID: 9674}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -598,6 +616,12 @@ ScriptsOnlyBuild:
     className: AnimatedTile
   - hash:
       serializedVersion: 2
+      Hash: be2e20ae64d1d41d1e13600967edb89d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: pipe_move
+  - hash:
+      serializedVersion: 2
       Hash: 7e9cad7f71f9cc52f699bbd2d2a75734
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -706,6 +730,18 @@ ScriptsOnlyBuild:
     className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 16fb834e3ad4d05f28e7c37d3e5b19f1
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: pipe_spawn
+  - hash:
+      serializedVersion: 2
+      Hash: d83e485a0ab5f7ca66237fa0f476a30d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: pipe_middle
+  - hash:
+      serializedVersion: 2
       Hash: 191cd500c627cd6682ef6f70b8e47f2c
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -790,10 +826,22 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: 0c309bf608c2a126f4f0c39226032c8f
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: top_border
+  - hash:
+      serializedVersion: 2
       Hash: da5a949a0bbd2ff91bc51c5805c2c41f
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseUpAsButtonMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 16cdd5a2609e1299975573b432134422
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: background_move
   - hash:
       serializedVersion: 2
       Hash: 4f353524ce6564e40764f1ea080b2d85
@@ -866,6 +914,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: 797e26fc2c0670333f1280a518f76773
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ground_spawn
   - hash:
       serializedVersion: 2
       Hash: 17142b03663387290480c82303274c02
@@ -956,6 +1010,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 14b0ac970a832efb4047f2753f3b763b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GroundMove
   - hash:
       serializedVersion: 2
       Hash: a89b0448af4e1cd103a77f9fec0a961f
@@ -1114,34 +1174,22 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: e012e6f0e2a4e78d897a837e31ac98c2
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: bird_script
-  - hash:
-      serializedVersion: 2
-      Hash: be2e20ae64d1d41d1e13600967edb89d
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: pipe_move
-  - hash:
-      serializedVersion: 2
-      Hash: 16fb834e3ad4d05f28e7c37d3e5b19f1
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: pipe_spawn
-  - hash:
-      serializedVersion: 2
-      Hash: c3df8c2d8f74e1bcccf1543ea028aa2d
+      Hash: 500c564eed6d0022eadee61adc159cbd
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: logic
   - hash:
       serializedVersion: 2
-      Hash: d83e485a0ab5f7ca66237fa0f476a30d
+      Hash: c13ef39d0d672b9d3e47f256f84c08d2
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: pipe_middle
+    className: space_to_retry
+  - hash:
+      serializedVersion: 2
+      Hash: e012e6f0e2a4e78d897a837e31ac98c2
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: bird_script
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
